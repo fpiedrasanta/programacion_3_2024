@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.caja {
+    width: 350px;
+    height: 350px;
+}
+
+.caja-externa {
+    background-color: red;
+}
+
+.caja-interna {
+    background-color: blue;
+    border-radius: 8px;
+}
+
+#caja_interna1 {
+    transition: 
+        transform 1s,
+        box-shadow 1s;
+    transform: scale(1, 1);
+}
+
+#caja_interna1:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 10px 10px 10px black;
+}

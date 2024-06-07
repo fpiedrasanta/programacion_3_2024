@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#dado {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotatey(0deg) rotateZ(0deg);
+    width: 400px;
+    height: 400px;
+    transition: transform 10s;
+}
+
+.cara {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background-color: blue;
+    border: 1px solid red;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cara1 {
+    transform: translateX(200px) rotateY(90deg);
+    background-image: linear-gradient(to left, red, blue);
+}
+
+#cara2 {
+    transform: translateX(-200px) rotateY(-90deg);
+    background-image: linear-gradient(to left, green, yellow);
+}
+
+#cara3 {
+    transform: translateZ(200px);
+    background-image: linear-gradient(to left, brown, rgb(182, 45, 148));
+}
+
+#cara4 {
+    transform: translateZ(-200px) rotateY(180deg);
+    background-image: linear-gradient(to left, rgb(70, 143, 161), rgb(49, 71, 47));
+}
+
+#cara5 {
+    transform: translateY(-200px) rotateX(90deg);
+    background-color: red;
+}
+
+#cara6 {
+    transform: translateY(200px) rotateX(-90deg);
+    background-color: blue;
+}
+
+#dado:hover {
+    transform: rotateX(360deg) rotatey(360deg) rotateZ(360deg);
+}

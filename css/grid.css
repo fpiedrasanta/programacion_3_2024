@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grilla {
+    display: grid;
+    grid-template-areas: 
+        "services products"
+        "aside    footer";
+
+    grid-template-columns: 40% 40%;
+    width: 100%;
+    height: 260px;
+    grid-template-rows: 100px 100px;
+    
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    
+    
+    border: 1px solid red;
+}
+
+.item {
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+#navbar {
+    grid-area: nv;
+    background-color: red;
+}
+
+#header {
+    grid-area: header;
+    background-color: blue;
+    object-fit: cover;
+}
+
+#header img {
+    margin-top: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#products {
+    grid-area: products;
+    background-color: blueviolet;
+}
+
+#services {
+    grid-area: services;
+    background-color: yellow;
+}
+
+.right {
+    justify-self: end;
+}
+
+.bottom {
+    align-self: end;
+}
+
+#aside {
+    grid-area: aside;
+    background-color: aquamarine;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}

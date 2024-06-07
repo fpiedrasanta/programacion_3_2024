@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.square {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    animation: ejemplo 10s linear 2s 2;
+}
+
+.square2 {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    animation: ejemplo 5s linear 0s infinite;
+}
+
+@keyframes ejemplo {
+    0% { width: 500px; }
+    25% { width: 250px; }
+    50% { width: 0px; background-color: red; }
+    75% { width: 250px; }
+    100% { width: 500px; background-color: blue; }
+}

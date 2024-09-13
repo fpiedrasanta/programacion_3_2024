@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#posts, #posts2 {
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid black;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card h2 {
+    color: red;
+}
+
+.body {
+    color: green;
+}
+
+.card {
+    background-color: lightblue;
+    width: 450px;
+}
+
+.card img {
+    width: 300px;
+}

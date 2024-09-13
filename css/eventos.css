@@ -1,0 +1,37 @@
+.cuadrado {
+    width: 90px; 
+    height: 35px; 
+    border-width: 1px;
+    border-color: black;
+    background-color: red;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.unpressed {
+    border-style: outset;
+}
+
+.pressed {
+    border-style: inset;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.error {
+    border-color: red;
+    color: red;
+}
+
+.txt_nombre_error {
+    display: none;
+}
+
+.show {
+    display: block;
+}
